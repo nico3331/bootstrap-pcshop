@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GamePC</title>
+    <link rel="icon" type="image/png" href="PCimg/repairing-service.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">GamePC</a>
+            <img src="PCimg/pc.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Переваги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#catalog">Каталог</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="video-header text-white text-center py-5">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="PCimg/video-background.mp4" type="video/mp4">
+            Ваш браузер не підтримує відео
+        </video>
+        <div class="container position-relative">
+            <h1>Замовте комп'ютер своєї мрії</h1>
+            <p class="lead">Потужність, надійність, продуктивність</p>
+            <a href="#catalog" class="btn btn-light btn-lg">Переглянути каталог</a>
+        </div>
+    </header>
+    
+
+    <section id="features" class="py-5">
+        <div class="container text-center">
+            <h2>Наші переваги</h2>
+            <div class="row mt-4 align-items-center">
+                <div class="col-md-6">
+                    <img src="PCimg/why.jpg" alt="Переваги" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 text-start">
+                    <h3>Чому варто обрати GamePC?</h3>
+                    <ul class="list-unstyled">
+                        <li><strong>🚀 Висока продуктивність:</strong> Використовуємо тільки найкраще залізо.</li>
+                        <li><strong>🔧 Якість збірки:</strong> Ретельний підхід до складання кожного ПК.</li>
+                        <li><strong>🛡️ Гарантія та підтримка:</strong> 2 роки офіційної гарантії.</li>
+                        <li><strong>⚡ Готовність до ігор:</strong> Оптимізовані для найновіших AAA-проєктів.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="catalog" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Наші ігрові комп'ютери</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="PCimg/img2.png" class="card-img-top" alt="ПК 1">
+                        <div class="card-body">
+                            <h5 class="card-title">GamePC Starter</h5>
+                            <p class="card-text">Ідеальний вибір для початківців.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Детальніше</button>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="PCimg/img1.png" class="card-img-top" alt="ПК 2">
+                    <div class="card-body">
+                        <h5 class="card-title">GamePC Pro</h5>
+                        <p class="card-text">Для ентузіастів та стрімерів.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Детальніше</button>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="PCimg/img3.png" class="card-img-top" alt="ПК 3">
+                    <div class="card-body">
+                        <h5 class="card-title">GamePC Ultra</h5>
+                        <p class="card-text">Максимальна потужність без компромісів.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Детальніше</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">GamePC Starter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Процесор: Intel Core i5 12500H</p>
+                    <p>Відеокарта: GTX 1660</p>
+                    <p>ОЗП: 16GB DDR4</p>
+                    <p>SSD: 512GB</p>
+                    <a href="#order" class="btn btn-success">Замовити</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">GamePC Pro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Процесор: Intel Core i7 12700K</p>
+                    <p>Відеокарта: RTX 3070</p>
+                    <p>ОЗП: 32GB DDR4</p>
+                    <p>SSD: 1TB NVMe</p>
+                    <a href="#order" class="btn btn-success">Замовити</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">GamePC Ultra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Процесор: Intel Core i9 14900KF</p>
+                    <p>Відеокарта: RTX 4090</p>
+                    <p>ОЗП: 64GB DDR5</p>
+                    <p>SSD: 2TB NVMe</p>
+                    <a href="#order" class="btn btn-success">Замовити</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Контакти</h2>
+            <p>Зв'яжіться з нами для отримання додаткової інформації</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Адреса</h4>
+                    <p>м. Полтава, вул. Сакко 007</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Контактні дані</h4>
+                    <p>📞 Viber +38 (099) 123-45-67</p>
+                    <p>📞 Telegram @nik0lasu</p>
+                    <p>✉ gamepc@example.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 GamePC. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
